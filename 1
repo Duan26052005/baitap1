@@ -1,0 +1,34 @@
+package bai1.pkg1;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class Bai11 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scanner =new Scanner(System.in);
+        System.out.print("Fullname:");
+        String fullname= scanner.nextLine();
+        System.out.print("Year of old: ");
+        int yearOfOld = scanner.nextInt();
+        scanner.nextLine();
+      //  int yearOfOld Integer.parseInt(scanner.nextLine());
+        System.out.print("Sex: ");
+        String sex = scanner.nextLine();
+        System.out.print("GPA: ");
+        float GPA = scanner.nextFloat();
+         //  float GPA = Float.parseFloat(scanner.nextLine());
+        scanner.nextLine();
+        System.out.print("Hometown: ");
+        String HomeTown = scanner.nextLine();
+        System.out.println(fullname+ "-"+ yearOfOld+"-"+sex +"-" GPA +"-" + Hometown);
+        
+    }
+    
+}
